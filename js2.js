@@ -538,7 +538,8 @@ for (let i = 0; i < favMovies_Gabor.length; i++) {
 
 
 
-// console.log(ourTeam.members[3].favorites);
+
+console.log(ourTeam.members[3].favorites);
 
 //delete
 for (const movies of favMovies_Dora) {
@@ -571,7 +572,10 @@ for (const book of myFavouriteBooks_Iren){
 for (const book of favoriteBooks_Gabor){
   delete book.isNewerThan2000;
 }
-
+// delete
+// for(const movies of favMovies_Dora) {
+//   delete movies.description;
+// }
 
 //youngest member
 
@@ -582,19 +586,12 @@ for (const age of ourTeam.members) {
         youngestMember = age
     }
 }
-console.log(youngestMember);
+// console.log(youngestMember);
 
 
 
-// delete
-// for(const movies of favMovies_Dora) {
-//   delete movies.description;
-// }
+// location
 
-
-
-// let totalAge = 0;
-// for (const age of ourTeam.members.birthday.year) 
 
 
 
