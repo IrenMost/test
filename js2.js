@@ -538,7 +538,8 @@ for (let i = 0; i < favMovies_Gabor.length; i++) {
 
 
 
-console.log(ourTeam.members[3].favorites);
+// console.log(ourTeam.members[3].favorites);
+
 //delete
 for (const movies of favMovies_Dora) {
   delete movies.description;
@@ -572,16 +573,16 @@ for (const book of favoriteBooks_Gabor){
 }
 
 
+//youngest member
 
 
-
-// let youngestMember = ourTeam.members[0].birthday.year;
-// for (const age of ourTeam.members.birthday.year) {
-//     if( members.birthday.year > youngestMember.age){
-//         youngestMember = age
-//     }
-// }
-// console.log(youngestMember);
+let youngestMember = ourTeam.members[0].name;
+for (const age of ourTeam.members) {
+    if( age.birthday.year > youngestMember.year){
+        youngestMember = age
+    }
+}
+console.log(youngestMember);
 
 
 
