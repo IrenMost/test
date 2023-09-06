@@ -419,8 +419,8 @@ for (let i = 0; i < ourTeam.members.length; i++) {
     seniority: seniority,
   };
 }
-console.log(ourTeam.members[2].codinglevel);
-//review
+
+//review book
 
 for (let i = 0; i < myFavouriteBooks_Iren.length; i++) {
   let review = "";
@@ -466,7 +466,7 @@ for (let i = 0; i < favoriteBooks_Gabor.length; i++) {
   favoriteBooks_Gabor[i].review = review;
 }
 
-console.log (ourTeam.members[1].favorites);
+
 
 //delete
 for (const movies of favMovies_Dora) {
@@ -480,8 +480,9 @@ for (const movies of favMovies_Viki) {
 for (const movies of myFavMovies_Iren) {
   delete movies.description;
 }
-for (const movies of favMovies_Gabor) {
-  delete movies.description;
+for (const movie of favMovies_Gabor) {
+ 
+    delete movie.description;
 }
 
 
@@ -500,7 +501,6 @@ for (const book of favoriteBooks_Gabor){
 }
 
 
-//newest
 
 
 
