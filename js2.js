@@ -581,12 +581,61 @@ for (const kutya of ourTeam.members) {
 
 // let memberLocation = ourTeam.members[i].location.city + ":" + ourTeam.members[i].name
 
-let location = "";
-for (const majom of ourTeam.members) {
-  location += majom.name + ":"+ "";
-  for (const gorilla of majom.location.city) {
-    location += gorilla + "";
-  }
-  location += "\n\n";
+// let location = "";
+// for (const majom of ourTeam.members) {
+//   location += majom.name + ":"+ "";
+//   for (const gorilla of majom.location.city) {
+//     location += gorilla + "";
+//   }
+//   location += "\n\n";
+// }
+// console.log(location);
+
+//Theme work
+
+
+ourTeam.members[0].favorites = {};
+
+
+// console.log(ourTeam.members[3]);
+// create favorites key as object in each members object
+
+for (let i = 0; i < ourTeam.members.length; i++) {
+  ourTeam.members[i].color = {
+    primary: "",
+    secondary: ""
+
+  };
 }
-console.log(location);
+
+
+let color_Dora = {
+    primary: {
+      red: "",
+      green: "",
+      blue: ""
+    },
+    secondary: {
+      red: "",
+      green: "",
+      blue: ""
+    },
+  },
+
+
+ourTeam.members[0].favorites = {
+  myFavMovies_Iren,
+  myFavouriteBooks_Iren,
+};
+ourTeam.members[1].favorites = {
+  favMovies_Gabor,
+  favoriteBooks_Gabor,
+};
+ourTeam.members[2].favorites = {
+  favMovies_Dora,
+  favoriteBooks_Dora,
+};
+ourTeam.members[3].favorites = {
+  favMovies_Viki,
+  favoriteBooks_Viki,
+};

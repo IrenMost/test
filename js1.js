@@ -402,102 +402,102 @@ ourTeam.members[3].favorites = {
 
 //Seniority
 
-for (let i = 0; i < ourTeam.members.length; i++) {
-  let seniority = "";
-  if (ourTeam.members[i].codinglevel < 50) {
-    seniority = "Junior";
-  } else if (
-    ourTeam.members[i].codinglevel >= 50 &&
-    ourTeam.members[i].codinglevel < 75
-  ) {
-    seniority = "Medior";
-  } else {
-    seniority = "Senior";
-  }
-  ourTeam.members[i].codinglevel = {
-    level: ourTeam.members[i].codinglevel,
-    seniority: seniority,
-  };
-}
-console.log(ourTeam.members[2].codinglevel);
+// for (let i = 0; i < ourTeam.members.length; i++) {
+//   let seniority = "";
+//   if (ourTeam.members[i].codinglevel < 50) {
+//     seniority = "Junior";
+//   } else if (
+//     ourTeam.members[i].codinglevel >= 50 &&
+//     ourTeam.members[i].codinglevel < 75
+//   ) {
+//     seniority = "Medior";
+//   } else {
+//     seniority = "Senior";
+//   }
+//   ourTeam.members[i].codinglevel = {
+//     level: ourTeam.members[i].codinglevel,
+//     seniority: seniority,
+//   };
+// }
+// console.log(ourTeam.members[2].codinglevel);
 //review
 
-for (let i = 0; i < myFavouriteBooks_Iren.length; i++) {
-  let review = "";
-  if (myFavouriteBooks_Iren[i].title === "A Végtelen Történet") {
-    review = "izgi";
-  } else  {
-    review = "tanulásgos";
-  } 
+// for (let i = 0; i < myFavouriteBooks_Iren.length; i++) {
+//   let review = "";
+//   if (myFavouriteBooks_Iren[i].title === "A Végtelen Történet") {
+//     review = "izgi";
+//   } else  {
+//     review = "tanulásgos";
+//   } 
  
-  myFavouriteBooks_Iren[i].review = review;
-}
+//   myFavouriteBooks_Iren[i].review = review;
+// }
 // dóri
-for (let i = 0; i < favoriteBooks_Dora.length; i++) {
-  let review = "";
-  if (favoriteBooks_Dora[i].title === "Fall of Giants") {
-    review = "dejo1";
-  } else  {
-    review = "dejo2";
-  } 
+// for (let i = 0; i < favoriteBooks_Dora.length; i++) {
+//   let review = "";
+//   if (favoriteBooks_Dora[i].title === "Fall of Giants") {
+//     review = "dejo1";
+//   } else  {
+//     review = "dejo2";
+//   } 
  
-  favoriteBooks_Dora.review = review;
-}
+//   favoriteBooks_Dora.review = review;
+// }
 //Viki
-for (let i = 0; i < favoriteBooks_Viki.length; i++) {
-  let review = ""
-  if (favoriteBooks_Viki[i].title === "SPARE") {
-    review = "dejo3";
-  } else  {
-    review = "tanulásgos4";
-  } 
+// for (let i = 0; i < favoriteBooks_Viki.length; i++) {
+//   let review = ""
+//   if (favoriteBooks_Viki[i].title === "SPARE") {
+//     review = "dejo3";
+//   } else  {
+//     review = "tanulásgos4";
+//   } 
  
-  favoriteBooks_Viki[i].review = review;
-}
+//   favoriteBooks_Viki[i].review = review;
+// }
 //Gábor
-for (let i = 0; i < favoriteBooks_Gabor.length; i++) {
-  let review = ""
-  if (favoriteBooks_Gabor[i].title === "Crazy Town") {
-    review = "izgi5";
-  } else  {
-    review = "tanulásgos6";
-  } 
+// for (let i = 0; i < favoriteBooks_Gabor.length; i++) {
+//   let review = ""
+//   if (favoriteBooks_Gabor[i].title === "Crazy Town") {
+//     review = "izgi5";
+//   } else  {
+//     review = "tanulásgos6";
+//   } 
  
-  favoriteBooks_Gabor[i].review = review;
-}
+//   favoriteBooks_Gabor[i].review = review;
+// }
 
-console.log (ourTeam.members[1].favorites);
+// console.log (ourTeam.members[1].favorites);
 
 //delete
-for (const movies of favMovies_Dora) {
-  delete movies.description;
-}
+// for (const movies of favMovies_Dora) {
+//   delete movies.description;
+// }
 
-for (const movies of favMovies_Viki) {
-  delete movies.description;
-}
+// for (const movies of favMovies_Viki) {
+//   delete movies.description;
+// }
 
-for (const movies of myFavMovies_Iren) {
-  delete movies.description;
-}
-for (const movies of favMovies_Gabor) {
-  delete movies.description;
-}
+// for (const movies of myFavMovies_Iren) {
+//   delete movies.description;
+// }
+// for (const movies of favMovies_Gabor) {
+//   delete movies.description;
+// }
 
 
-for (const book of favoriteBooks_Dora){
-  delete book.isNewerThan2000;
-}
- for (const book of favoriteBooks_Viki){
-  delete book.isNewerThan2000;
-}
-for (const book of myFavouriteBooks_Iren){
-  delete book.isNewerThan2000;
-}
+// for (const book of favoriteBooks_Dora){
+//   delete book.isNewerThan2000;
+// }
+//  for (const book of favoriteBooks_Viki){
+//   delete book.isNewerThan2000;
+// }
+// for (const book of myFavouriteBooks_Iren){
+//   delete book.isNewerThan2000;
+// }
 
-for (const book of favoriteBooks_Gabor){
-  delete book.isNewerThan2000;
-}
+// for (const book of favoriteBooks_Gabor){
+//   delete book.isNewerThan2000;
+// }
 
 
 //newest
@@ -526,21 +526,33 @@ for (const book of favoriteBooks_Gabor){
 
 
 
-/ let memberLocation = ourTeam.members[i].location.city + ":" + ourTeam.members[i].name
+// / let memberLocation = ourTeam.members[i].location.city + ":" + ourTeam.members[i].name
 
-let location = "";
-for (const majom of ourTeam.members) {
-  location += majom.name + ":"+ "";
-  for (const gorilla of majom.location.city) {
-    location += gorilla + "";
-  }
-  location += "\n\n";
+// let location = "";
+// for (const majom of ourTeam.members) {
+//   location += majom.name + ":"+ "";
+//   for (const gorilla of majom.location.city) {
+//     location += gorilla + "";
+//   }
+//   location += "\n\n";
+// }
+// console.log(location);
+
+
+let commonGenres = {
+  comady: "",
+  thriller: ""
 }
-console.log(location);
 
+let comedy = 0;
 
+for (const genre of ourTeam.members.favorites) {
+  if (genre === comedy) {
+    comedy = comedy + 1,
+  }
+} {
 
-
+}
 
 
 
