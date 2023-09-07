@@ -526,7 +526,17 @@ for (const book of favoriteBooks_Gabor){
 
 
 
+/ let memberLocation = ourTeam.members[i].location.city + ":" + ourTeam.members[i].name
 
+let location = "";
+for (const majom of ourTeam.members) {
+  location += majom.name + ":"+ "";
+  for (const gorilla of majom.location.city) {
+    location += gorilla + "";
+  }
+  location += "\n\n";
+}
+console.log(location);
 
 
 
