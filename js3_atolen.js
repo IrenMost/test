@@ -202,31 +202,43 @@
 // }
 
 
+// Average Age 
 
 let totalYear = 0 
 
-    for (const album of bestSellingAlbums) {
-    totalYear += album.year 
+for (const album of bestSellingAlbums) {
+totalYear += album.year 
 }
 
-    const averageYear = totalYear / bestSellingAlbums.length
+const averageYear = totalYear / bestSellingAlbums.length
 
-    let thisYear = 2023
+let thisYear = 2023
 
-    const averageAge = thisYear - averageYear
+const averageAge = thisYear - averageYear
 
-    console.log(averageAge)
+console.log(averageAge)
 
-    // oldest/newest album
+// oldest/newest album
 
-    let newestAlbum = bestSellingAlbums[0]
+let newestAlbum = bestSellingAlbums[0]
 
-    for (const album of bestSellingAlbums) {
-    if (album.year > newestAlbum.year) {
-        newestAlbum = album
-    }
-    }
-    console.log(newestAlbum.title)
+for (const album of bestSellingAlbums) {
+if (album.year > newestAlbum.year) {
+    newestAlbum = album
+}
+}
+console.log(newestAlbum.title)
+
+let oldestAlbum = bestSellingAlbums[0]
+
+for (const album of bestSellingAlbums) {
+if (album.year < oldestAlbum.year) {
+    oldestAlbum = album
+}
+}
+console.log(oldestAlbum.title)
+// albums of Eagles
+
 
 eaglesAlbumsCount = 0
 softRockEaglesAlbumsCount = 0

@@ -587,20 +587,57 @@ for (const age of ourTeam.members) {
     }
 }
 // console.log(youngestMember);
+let newestAlbum = bestSellingAlbums[0]
+
+for (const album of bestSellingAlbums) {
+if (album.year > newestAlbum.year) {
+    newestAlbum = album
+}
+}
+console.log(newestAlbum.title)
 
 
 
 // location
 
 
+for (const location of ourTeam.members){
+  if (location.city === "Szigetszentmiklós" || location.city === "Győr"){
+      location = true 
+      }else{
+          location = false
+      }
+  }
+console.log(bestSellingAlbums)
 
+// common genre
 
+// let commonGenres = {
+//   JhonYousEonus1: "",
+//   VictorYousEonus1: "",
+//   JhonYousEonus2: "",
+//   VictorYousEonus2: "",
+//   JhonYousEonus3: "",
+//   VictorYousEonus3: "",
+//   JhonYousEonus4: "",
+//   VictorYousEonus4: "",
+//   comedy: "",
+//   drama: "",
+//   action: "",
+//   crime: "",
+//   romance: "",
+//   war: "",
+//   thriller: "",
+//   biography: "",
+//   mistery: ""
+// }
 
+let comedy = 0;
+// fuss végig a genre-ken, 
+    // if genre[i] === comedy
+    //{comedy += 1;
 
-
-
-
-
+    }
 
 
 
