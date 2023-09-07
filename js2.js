@@ -477,7 +477,7 @@ for (let i = 0; i < favoriteBooks_Gabor.length; i++) {
   favoriteBooks_Gabor[i].review = review;
 }
 
-console.log(ourTeam.members[3].favorites);
+//console.log(ourTeam.members[3].favorites);
 
 //delete
 for (const movie of favMovies_Dora) {
@@ -510,7 +510,7 @@ for (const book of favoriteBooks_Gabor){
   delete book.isNewerThan2000;
 }
 
-console.log(ourTeam.members[1].favorites)
+//console.log(ourTeam.members[1].favorites)
 
 
 // counting Team members avarage age
@@ -522,7 +522,7 @@ for (const cica of ourTeam.members) {
 }
 let averageAge = totalAge / ourTeam.members.length;
 let summ= currantYear - averageAge
-console.log(summ);
+//console.log(summ);
 
 // Youngest and Oldest member
 let youngestMember = ourTeam.members[2];
@@ -532,7 +532,7 @@ for (const kutya of ourTeam.members) {
     
   }
 }
-console.log("Youngest Member: ",youngestMember.name);
+//console.log("Youngest Member: ",youngestMember.name);
 
 let oldestMember = ourTeam.members[0];
 for (const kutya of ourTeam.members) {
@@ -541,27 +541,52 @@ for (const kutya of ourTeam.members) {
     
   }
 }
-console.log("Oldest Member: ",oldestMember.name);
+//console.log("Oldest Member: ",oldestMember.name);
+
+//location
+
+// let memberLocation[i] = ourTeam.members[0].location.city + ":" + ourTeam.members[0].name;
 
 
 
-// DON'T MODIFY THE CODE BELOW THIS LINE
 
-let toExport;
+// let memberlocation = ""
+// for (let i = 0; i < ourTeam.members.length; i++) {
+//   let memberLocation = ourTeam.members[i].location.city + ":" + ourTeam.members[i].name
+// }
 
-try {
-  //{ourTeam, averageAge, youngestMember, location, }
-  toExport = [
-    { name: "ourTeam", content: ourTeam, type: "object" },
-    { name: "averageAge", content: averageAge, type: "number" },
-    { name: "averageCodingLevel", content: averageCodingLevel, type: "number" },
-    { name: "youngestMember", content: youngestMember, type: "string" },
-    { name: "oldestMember", content: oldestMember, type: "string" },
-    { name: "location", content: location, type: "object" },
-    { name: "commonGenres", content: commonGenres, type: "object" },
-  ];
-} catch (error) {
-  toExport = { error: error.message };
+// console.log(memberLocation);
+
+// for (let i = 0; i < ourTeam.members.length; i++) {
+//   let memberLocation = "";
+//   if (ourTeam.members[i].memberLocation === ourTeam.members[0].memberLocation) {
+//     city = ourTeam.members[0].memberLocation;
+//   } else if (
+//     ourTeam.members[i].memberLocation === ourTeam.members[1].memberLocation) {
+//       city = ourTeam.members[1].memberLocation;
+
+//   } else if (ourTeam.members[i].memberLocation === ourTeam.members[2].memberLocation)
+//   {
+//     city = ourTeam.members[2].memberLocation;
+
+//   } else 
+
+//     city = ourTeam.members[3].memberLocation; 
+//   ourTeam.members[i].memberLocation = {
+//     name: ourTeam.members[i].name,
+//     city: ourTeam.members[i].location.city,
+//   };
+//   console.log (memberLocation.city);
+// }
+
+// let memberLocation = ourTeam.members[i].location.city + ":" + ourTeam.members[i].name
+
+let location = "";
+for (const majom of ourTeam.members) {
+  location += majom.name + ":"+ "";
+  for (const gorilla of majom.location.city) {
+    location += gorilla + "";
+  }
+  location += "\n\n";
 }
-
-export { toExport };
+console.log(location);
