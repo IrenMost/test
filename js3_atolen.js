@@ -90,73 +90,73 @@
 
 
 
-// //review movie Irén
+//review movie Irén
 
-// for (let i = 0; i < myFavMovies_Iren.length; i++) {
-//   let review = "";
-//   if (myFavMovies_Iren[i].title === "Holt költők társasága (Dead Poets Society)") {
-//     review = "izgi";
-//   } else  if (myFavMovies_Iren[i].title === "Nekem8 (Nothing to lose)"){
-//     review = "vicces";
-//   } else if(myFavMovies_Iren[i].title === "Született gyilkosok (Natural born killers)"){
-//     review = "durva";
-//   } else {
-//     review = "ijesztő";
-//   }
+for (let i = 0; i < myFavMovies_Iren.length; i++) {
+  let review = "";
+  if (myFavMovies_Iren[i].title === "Holt költők társasága (Dead Poets Society)") {
+    review = "izgi";
+  } else  if (myFavMovies_Iren[i].title === "Nekem8 (Nothing to lose)"){
+    review = "vicces";
+  } else if(myFavMovies_Iren[i].title === "Született gyilkosok (Natural born killers)"){
+    review = "durva";
+  } else {
+    review = "ijesztő";
+  }
  
-//   myFavMovies_Iren[i].review = review;
-// }
+  myFavMovies_Iren[i].review = review;
+}
 
-// // movie dóri
+// movie dóri
 
-// for (let i = 0; i < favMovies_Dora.length; i++) {
-//   let review = "";
-//   if (favMovies_Dora[i].title === "Gone with the Wind ") {
-//     review = "szomorú";
-//   } else  if (favMovies_Dora[i].title === "The Silence of the Lambs"){
-//     review = "reális";
-//   } else if(favMovies_Dora[i].title === "Changeling"){
-//     review = "durva";
-//   } else {
-//     review = "megrázó";
-//   }
+for (let i = 0; i < favMovies_Dora.length; i++) {
+  let review = "";
+  if (favMovies_Dora[i].title === "Gone with the Wind ") {
+    review = "szomorú";
+  } else  if (favMovies_Dora[i].title === "The Silence of the Lambs"){
+    review = "reális";
+  } else if(favMovies_Dora[i].title === "Changeling"){
+    review = "durva";
+  } else {
+    review = "megrázó";
+  }
  
-//   favMovies_Dora[i].review = review;
-// }
-//  // movie viki
-
- 
-// for (let i = 0; i < favMovies_Viki; i++) {
-//   let review = "";
-//   if (favMovies_Viki[i].title === "The Shawshank Redemption") {
-//     review = "fordulatos";
-//   } else  if (favMovies_Viki[i].title === "The Godfather"){
-//     review = "drámai";
-//   } else if(favMovies_Viki[i].title === "The Dark Knight"){
-//     review = "durva";
-//   } else {
-//     review = "tanulságos";
-//   }
- 
-//   favMovies_Viki[i].review = review;
-// }
-//  // movie gábor
+  favMovies_Dora[i].review = review;
+}
+ // movie viki
 
  
-// for (let i = 0; i < favMovies_Gabor.length; i++) {
-//   let review = "";
-//   if (favMovies_Gabor[i].title === "Matrix") {
-//     review = "lehetséges";
-//   } else  if (favMovies_Gabor[i].title === "Breaking Bad"){
-//     review = "valós";
-//   } else if(favMovies_Gabor[i].title === "The Walking Dead"){
-//     review = "durva";
-//   } else {
-//     review = "apocaliptic";
-//   }
+for (let i = 0; i < favMovies_Viki; i++) {
+  let review = "";
+  if (favMovies_Viki[i].title === "The Shawshank Redemption") {
+    review = "fordulatos";
+  } else  if (favMovies_Viki[i].title === "The Godfather"){
+    review = "drámai";
+  } else if(favMovies_Viki[i].title === "The Dark Knight"){
+    review = "durva";
+  } else {
+    review = "tanulságos";
+  }
  
-//   favMovies_Gabor[i].review = review;
-// }
+  favMovies_Viki[i].review = review;
+}
+ // movie gábor
+
+ 
+for (let i = 0; i < favMovies_Gabor.length; i++) {
+  let review = "";
+  if (favMovies_Gabor[i].title === "Matrix") {
+    review = "lehetséges";
+  } else  if (favMovies_Gabor[i].title === "Breaking Bad"){
+    review = "valós";
+  } else if(favMovies_Gabor[i].title === "The Walking Dead"){
+    review = "durva";
+  } else {
+    review = "apocaliptic";
+  }
+ 
+  favMovies_Gabor[i].review = review;
+}
 
 
 
