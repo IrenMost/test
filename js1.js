@@ -548,7 +548,7 @@ let comedy = 0;
 
 for (const genre of ourTeam.members.favorites) {
   if (genre === comedy) {
-    comedy = comedy + 1,
+    comedy = comedy + 1
   }
 } {
 
