@@ -19,4 +19,6 @@ const pointsOfInterests = [];
 
 // Write your code here
 
+console.log(goibioData);
+
 export { pointsOfInterests };

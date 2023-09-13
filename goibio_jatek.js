@@ -873,4 +873,6 @@ const goibioData = [
         uniq_id: "ae587589415630183abc91d5f2fd3de4"
     },
 ]
+
+
 export { goibioData };
