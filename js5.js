@@ -31,7 +31,8 @@ function bandNameGenerator(string) {
 let length = string.length;
 for (let i = 0; i < nouns.length; i++) {
     if (length % nouns.length === i) {
-        console.log(adjectives[i] + " " + nouns[i-1])
+        console.log(adjectives[i] + " " + nouns[i-1]);
+        brandName.push(adjectives[i] + " " + nouns[i-1])
     }
 } 
 }
@@ -59,16 +60,10 @@ bandNameGenerator("1111");
     
 //     bandNameGenerator("fajankó");
 
-    // function albumTitleGenerator (brandName) {
-    //     let numberTitles = 0;
+    function albumTitleGenerator (brandName) {
+        let numberTitles = 0;
 
-
-    //     for (let i = 0; i < nouns.length; i++) {
-    //         if (length % nouns.length === i) {
-    //             console.log(nouns[i])
-    //         }
-    //     } 
-    //     }
-    //     bandNameGenerator("fajankó");
+        }
+        albumTitleGenerator(brandName);
     
-    // const letters = ["a", "b", "c","", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+    const letters = ["a", "b", "c","", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
