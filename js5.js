@@ -23,39 +23,52 @@ const names=["Jon","Doe","Viki","Irén","Dóra"];
 
 // } }
 
-const letters = ["a", "b", "c","", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 
 
 
-// function bandNameGenerator(string) {
-// let length = string.length;
-// for (let i = 0; i < nouns.length; i++) {
-//     if (length % nouns.length === i) {
-//         console.log(nouns[i])
-//     }
-// } 
-// for (let i = 0; i < adjectives.length; i++) {
-//     if (length % adjectives.length === i) {
-//         console.log(adjectives[i])
-//     }
-// } 
-// }
-
-// bandNameGenerator("fajankó");
 const brandName = [];
 function bandNameGenerator(string) {
-    let length = string.length;
-    for (let i = 0; i < nouns.length; i++) {
-        if (length % nouns.length === i) {
-            brandName.push(nouns[i])
-        }
-    } 
-    for (let i = 0; i < adjectives.length; i++) {
-        if (length % adjectives.length === i) {
-            brandName.push(adjectives[i])
-        }
-    } 
-    console.log(brandName);
+let length = string.length;
+for (let i = 0; i < nouns.length; i++) {
+    if (length % nouns.length === i) {
+        console.log(adjectives[i] + " " + nouns[i-1])
     }
+} 
+}
+
+bandNameGenerator("1111");
+
+
+
+
+// const brandName = [];
+// function bandNameGenerator(string) {
+//     let length = string.length;
+//     for (let i = 0; i < nouns.length; i++) {
+//         if (length % nouns.length === i) {
+//             brandName.push(nouns[i])
+//         }
+//     } 
+//     for (let i = 0; i < adjectives.length; i++) {
+//         if (length % adjectives.length === i) {
+//             brandName.push(adjectives[i])
+//         }
+//     } 
+//     console.log(brandName);
+//     }
     
-    bandNameGenerator("fajankó");
+//     bandNameGenerator("fajankó");
+
+    // function albumTitleGenerator (brandName) {
+    //     let numberTitles = 0;
+
+
+    //     for (let i = 0; i < nouns.length; i++) {
+    //         if (length % nouns.length === i) {
+    //             console.log(nouns[i])
+    //         }
+    //     } 
+    //     }
+    //     bandNameGenerator("fajankó");
+    
+    // const letters = ["a", "b", "c","", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
