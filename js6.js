@@ -6,21 +6,14 @@ const adverbs =["secretly","weakly","quickly","loudly","away"];
 const conjunctions=["and","for","well","as long as","or"];
 const names=["Jon","Doe","Viki","Irén","Dóra"];
 
-const bandName = [];
+const brandName = [];
 function bandNameGenerator(string) {
-    
-let length = string.length;
-for (let i = 0; i < nouns.length; i++) {
-    if (length % nouns.length === i) {
-        console.log(adjectives[i] + " " + nouns[i-1])
+    let length = string.length;
+    for (let i = 0; i < nouns.length; i++) {
+        if (length % nouns.length === i) {
+            console.log(adjectives[i + 1] + " " + nouns[i - 1])
+        }
     }
-    function album (bandName) {
-        if (bandName === "1111") {
-            console.log("jaja")}
-    }
-    album(bandName)
-} return bandName
-
 }
 
-bandNameGenerator("1111");
+bandNameGenerator("amasssma");
