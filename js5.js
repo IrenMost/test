@@ -28,42 +28,63 @@ const names=["Jon","Doe","Viki","Irén","Dóra"];
 
 const brandName = [];
 function bandNameGenerator(string) {
+    
 let length = string.length;
 for (let i = 0; i < nouns.length; i++) {
     if (length % nouns.length === i) {
-        console.log(adjectives[i] + " " + nouns[i-1]);
-        brandName.push(adjectives[i] + " " + nouns[i-1])
+        console.log(adjectives[i] + " " + nouns[i-1])
     }
-} 
+    function album (brandName) {
+        if (brandName === "1111") {
+            console.log("jaja")}
+    }
+    album(brandName)
+} return brandName
+
 }
 
 bandNameGenerator("1111");
 
+    // function albumTitleGenerator (brandName) {
+    //   if (brandName === "crazy computers") {
+    //     console.log()
+    //   }
+
+    //     }
+    //     albumTitleGenerator(brandName);
+    
+    // const letters = ["a", "b", "c","", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+
+    // const brandName = [];
 
 
-
-// const brandName = [];
 // function bandNameGenerator(string) {
 //     let length = string.length;
 //     for (let i = 0; i < nouns.length; i++) {
 //         if (length % nouns.length === i) {
-//             brandName.push(nouns[i])
+//             console.log(adjectives[i] + " " + nouns[i - 1]);
+//             brandName.push(adjectives[i] + " " + nouns[i - 1])
 //         }
-//     } 
-//     for (let i = 0; i < adjectives.length; i++) {
-//         if (length % adjectives.length === i) {
-//             brandName.push(adjectives[i])
-//         }
-//     } 
-//     console.log(brandName);
 //     }
-    
-//     bandNameGenerator("fajankó");
+//     return brandName
+//     function albumTitleGenerator (brandName){
+//         if (brandName === "crazy computers") {
+//             console.log()
+//         }
+//     }
 
-    function albumTitleGenerator (brandName) {
-        let numberTitles = 0;
+// }
 
-        }
-        albumTitleGenerator(brandName);
-    
-    const letters = ["a", "b", "c","", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+// bandNameGenerator("1111");
+// console.log(brandName);
+
+
+// // function albumTitleGenerator(brandName) {
+// //     if (brandName === "crazy computers") {
+// //         console.log()
+// //     }
+
+// // }
+// // albumTitleGenerator(brandName);
+
+// // const letters = ["a", "b", "c", "", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
